@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .intro-text {
+    margin-bottom: 30px;
+    font-family: 'Forma DJR Micro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000;
+    
+    
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .btn-custom {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #d0d0d0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 576px) {
+    body {
+      padding: 10px;
+    }
+  
+    .intro-text,
+    .btn-custom {
+      font-size: 14px;
+    }
+  }

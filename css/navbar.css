@@ -1,0 +1,170 @@
+body {
+    background-color: #f7f8f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 30px auto;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .center-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .l-shape,
+  .l-shape-rotated {
+    width: 40px;
+    height: 50px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .l-shape::before,
+  .l-shape-rotated::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  .l-shape::before {
+    left: 0;
+  }
+  
+  .l-shape::after,
+  .l-shape-rotated::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  .l-shape::after {
+    left: 0;
+  }
+  
+  .l-shape-rotated::before {
+    right: 0;
+  }
+  
+  .l-shape-rotated::after {
+    right: 0;
+  }
+  
+  .triangles {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Forma DJR Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .nav-btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* --- RESPONSIVE --- */
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+    }
+  
+    .center-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .triangle-up,
+    .triangle-down {
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom-width: 35px;
+      border-top-width: 35px;
+    }
+  
+    .nav-btn {
+      font-size: 13px;
+      padding: 6px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .triangle-up,
+    .triangle-down {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom-width: 30px;
+      border-top-width: 30px;
+    }
+  
+    .nav-buttons {
+      gap: 8px;
+    }
+  
+    .nav-btn {
+      font-size: 12px;
+      padding: 5px 14px;
+    }
+  }
+  
