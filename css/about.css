@@ -1,0 +1,26 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap');
+
+body {
+  background-color: #fff;
+  font-family: 'General Sans', sans-serif;
+  color: #111;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#navbar-placeholder {
+    display: block;
+    height: 130px; 
+  }
+  
+
+.img1{
+    margin-bottom: 250px;
+}
